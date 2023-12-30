@@ -1,5 +1,9 @@
-table, th, td {
-    color: #000;
-    border: 1px solid;
-    border-collapse: collapse;
+title {
+    color: rgb(127, 45, 203);
+    width: auto;
+    height: 400 px;
   }
+title.topnav {
+    color:brown;
+
+}
