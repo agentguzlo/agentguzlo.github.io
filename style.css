@@ -1,14 +1,21 @@
-title {
-    color: rgb(127, 45, 203);
-    width: auto;
-    height: 400 px;
-  }
-title.topnav {
-    color:brown;
+body{
+  background-color:blanchedalmond;
 
 }
-.popup {
-  display: none;
+.topnav {
+   width: auto;
+   height: 50px;
+   background-color:#00fff3; 
+   animation: topnavStyle 10s infinite alternate;
+}
+@keyframes topnavStyle{
+  from{background-color:#05e9e2}
+  to{background-color:#9f26ed}
+  
+}
+
+#popup {
+  display:none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -22,19 +29,35 @@ title.topnav {
 .popup button {
   margin: 5px;
 }
-
+p.open-popup {
+  text-indent:11px;
+  word-spacing:8px
+}
 .open-popup {
+  height:20px;
+  width:150px;
   border: 2px solid transparent;
   padding: 5px;
-  cursor: pointer;
-  animation: blink 1s infinite;
+  cursor:pointer;
+  animation: blinkb 3.5s infinite;
+  
 }
 
-@keyframes blink {
-  0%, 100% {
+@keyframes blinkb {
+  0%{
     border-color: transparent;
   }
+  25% {
+     border-color:yellow;
+  }
   50% {
-    border-color: blue;
+    border-color: #3434d9;
+  }
+  75% {
+    border-color:green;
+  }
+  100% {
+    border-color:transparent;
   }
 }
+
