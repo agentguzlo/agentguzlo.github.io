@@ -1,29 +1,140 @@
-.topnav.ul {
-    margin:0;
-    padding:0;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.topnav.ul.li {
-    float: left;
-    width: 200px;
-    height: 40px;
-    background-color: #003542;
-    opacity: .9;
-    line-height: 40px;
+
+body {
+  font-family: cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+.Navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+
+  }
+  
+.NavList a {
+    color: #fff;
+}
+  
+  /* LOGO */
+#logo {
+    height: 100px;
+    width: 100px;
+}
+  
+  /* NAVBAR MENU */
+.NavList{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+  
+.NavList li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+  
+.NavList li {
+    padding: 5px 14px;
+  }
+  
+  /* DROPDOWN MENU */
+.aboutMe{
+    position: relative;
+} 
+.Practice {
+    position: relative;
+} 
+.Lab{
+    position: relative;
+    margin-right: 20px; 
+}
+  
+.contacts {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position:absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+    right: -20px;
+    
+}
+.PracticeList {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+.LabList {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+    right: -20px;
+}
+  
+.contacts li + li {
+    margin-top: 10px;
+}
+.PracticeList li + li {
+    margin-top: 10px;
+}
+.LabList li + li {
+    margin-top: 10px;
+}
+
+
+.contacts li {
+    padding: 0.5em 1em;
+    width: 8em;
     text-align: center;
-    font-size:20px;
 }
-.topnav.ul.li.a {
-    text-decoration: none;
-    color: white;
-    display:block;
+.PracticeList li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
 }
-.topnav.ul.li.a:hover {
-    background-color: #de1fcb;
+.LabList li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
 }
-.topnav.ul.li.ul.li {
-    display:none;
+
+.contacts li:hover {
+    background-color: #4c9e9e;
 }
-.topnav.ul.li:hover ul li{
-    display:block;
+.PracticeList li:hover {
+    background-color: #4c9e9e;
+}
+.LabList li:hover {
+    background-color: #4c9e9e;
+}
+
+.aboutMe:hover .contacts {
+    display: block;
+}
+.Practice:hover .PracticeList {
+    display: block;
+}
+.Lab:hover .LabList {
+    display: block;
 }

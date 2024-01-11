@@ -2,27 +2,45 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
         Personal web-site
     </title>
-    <div class="topnav">
-        <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="aboutMe.html">about me</a></li>
-                <ul>
-                    <li><a href="https://www.instagram.com/agent_guzlo/" target="_blank">instagram</a></li>
-                    <li><a href="https://github.com/agentguzlo/agentguzlo.github.io" target="_blank"></a>Github</li>
-                </ul>
-            <li><a href="PracticeEx.html">Practice Exercise</a></li>
-            <li><a href="LabWorks.html">Lab works</a></li>
-        </ul>
-    </div>
-    <a class="top block">
-        <p class="open-popup" > Bondarenko Serhi</p>
-        <img id="TCR-24"src="https://raw.githubusercontent.com/agentguzlo/agentguzlo.github.io/main/%D0%A2%D0%A6%D0%A0-24_Logo.png" alt ="TCR-24" width="50px" height="50px">
-    </a>
 </head>
 <body>
+    <nav class="Navigation">
+        <a>
+            <img id="Logo"src="https://raw.githubusercontent.com/agentguzlo/agentguzlo.github.io/main/%D0%A2%D0%A6%D0%A0-24_Logo.png" alt ="TCR-24" width="50px" height="50px">
+        </a>
+        <ul class="NavList">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li class="aboutMe"><a href="aboutMe.html">about me</a>
+                <ul class="contacts">
+                    <li><a href="https://www.instagram.com/agent_guzlo/" target="_blank">instagram</a></li><br>
+                    <li><a href="https://github.com/agentguzlo/agentguzlo.github.io" target="_blank">Github</a></li>
+                </ul>
+            </li>
+            <li class="Practice"><a href="PracticeEx.html">Practice Exercise</a>
+                <ul class="PracticeList">
+                    <li><a href="/">Dropdown 1 </a></li>
+                    <li><a href="/">Dropdown 2</a></li>
+                    <li><a href="/">Dropdown 2</a></li>
+                    <li><a href="/">Dropdown 3</a></li>
+                    <li><a href="/">Dropdown 4</a></li>
+                </ul>
+            </li>
+            <li class="Lab"><a href="LabWorks.html">Lab works</a>
+                <ul class="LabList">
+                    <li><a href="/">Dropdown 1 </a></li>
+                    <li><a href="/">Dropdown 2</a></li>
+                    <li><a href="/">Dropdown 2</a></li>
+                    <li><a href="/">Dropdown 3</a></li>
+                    <li><a href="/">Dropdown 4</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 <!--
     <div class="open-popup" id="popup">
         <button onclick="window.location.href='https://www.instagram.com/agent_guzlo/'" target="_blank" >instagram</button>
